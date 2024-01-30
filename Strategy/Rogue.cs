@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    internal class Heroes
+    internal class Rogue
     {
     }
 }
