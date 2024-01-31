@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Strategy
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для EntryWindoow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EntryWindoow : Window
     {
-        public MainWindow()
+        public EntryWindoow()
         {
             InitializeComponent();
         }
@@ -31,11 +30,6 @@ namespace Strategy
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
 
         }

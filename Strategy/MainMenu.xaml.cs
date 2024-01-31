@@ -10,32 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Strategy
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для MainMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainMenu : Window
     {
-        public MainWindow()
+        public MainMenu()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
         }
 
-        private void Enter_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        private void SinglePl_Click(object sender, RoutedEventArgs e)
         {
 
         }

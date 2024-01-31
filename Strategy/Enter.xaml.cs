@@ -16,26 +16,18 @@ using System.Windows.Shapes;
 namespace Strategy
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для Enter.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Enter : Page
     {
-        public MainWindow()
+        public Enter()
         {
             InitializeComponent();
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            EntryWin.Navigate(new Enter());
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
 
         }

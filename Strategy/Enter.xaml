@@ -1,0 +1,20 @@
+﻿<Page x:Class="Strategy.Enter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Strategy"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Enter">
+
+    <Grid Background="White">
+        <Frame Name="EntryWin" Content="Frame" HorizontalAlignment="Center" Height="450" VerticalAlignment="Center" Width="800">
+            <Frame.Background>
+                <ImageBrush ImageSource="/hq720.jpg"/>
+            </Frame.Background>
+        </Frame>
+        <Button x:Name="EntryBut" Content="Enter" HorizontalAlignment="Center" Height="98" VerticalAlignment="Center" Width="396" Click="Enter_Click" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Page>
