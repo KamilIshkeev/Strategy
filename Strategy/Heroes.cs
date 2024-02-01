@@ -52,6 +52,17 @@ namespace Strategy
 
 
 
+        public virtual void lvl_Up()
+        {
+
+        }
+
+
+
+
+
+
+
 
 
     }
