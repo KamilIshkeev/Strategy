@@ -16,5 +16,7 @@
             </Frame.Background>
         </Frame>
         <Button x:Name="EntryBut" Content="Enter" HorizontalAlignment="Left" Height="98" Margin="215,0,0,0" VerticalAlignment="Center" Width="395" Click="Enter_Click"/>
+        <!--<Button x:Name="Entry" Content="Button" HorizontalAlignment="Left" Height="57" Margin="655,330,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>-->
+
     </Grid>
 </Window>

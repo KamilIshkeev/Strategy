@@ -23,21 +23,27 @@ namespace Strategy
         public MainWindow()
         {
             InitializeComponent();
+           
         }
 
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
 
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
+            NavigationService m = NavigationService.GetNavigationService(this);
+            MainMenu.Navigate(new Uri("Enter.xaml", UriKind.Relative));
             
         }
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-
+            
         }
     }
 }

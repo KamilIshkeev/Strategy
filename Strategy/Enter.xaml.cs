@@ -24,7 +24,7 @@ namespace Strategy
         {
             InitializeComponent();
 
-            EntryWin.Navigate(new Enter());
+            //EntryWin.Navigate(new Enter());
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
