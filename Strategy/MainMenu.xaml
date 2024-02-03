@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:Strategy"
         mc:Ignorable="d"
         Title="MainMenu" Height="450" Width="800">
-    <Grid>
-        <Image Source="/Image3.png" Stretch="Fill"/>
-        <Button Name="StartGame" Content="SinglePlayer" HorizontalAlignment="Left" Height="44" Margin="250,173,0,0" VerticalAlignment="Top" Width="288" Click="SinglePl_Click"/>
-        <Image Source="/Image2.png" Stretch="Fill"/>
+    <Grid x:Name="MM">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image2.png"/>
+        </Grid.Background>
+
+        <Button x:Name="StartGame" Content="SinglePlayer" HorizontalAlignment="Left" Height="44" Margin="237,173,0,0" VerticalAlignment="Top" Width="288" Click="SinglePl_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="36" Margin="665,361,0,0" VerticalAlignment="Top" Width="108" Click="Back_Click"/>
 
     </Grid>
 </Window>

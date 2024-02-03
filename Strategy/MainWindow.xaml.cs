@@ -23,7 +23,8 @@ namespace Strategy
         public MainWindow()
         {
             InitializeComponent();
-           
+            EntryP p1 = new EntryP();
+            OurFrame.NavigationService.Navigate(p1);
         }
 
         
@@ -36,9 +37,10 @@ namespace Strategy
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService m = NavigationService.GetNavigationService(this);
-            MainMenu.Navigate(new Uri("Enter.xaml", UriKind.Relative));
-            
+            //NavigationService m = NavigationService.GetNavigationService(this);
+            //MainMenu.Navigate(new Uri("Enter.xaml", UriKind.Relative));
+            //MainMenu MaMe = new MainMenu();
+            //EnterFr.NavigationService.Navigate(MaMe);
         }
 
         private void Frame_Navigated(object sender, NavigationEventArgs e)

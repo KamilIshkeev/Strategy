@@ -16,20 +16,19 @@ using System.Windows.Shapes;
 namespace Strategy
 {
     /// <summary>
-    /// Логика взаимодействия для Enter.xaml
+    /// Логика взаимодействия для EntryP.xaml
     /// </summary>
-    public partial class Enter : Page
+    public partial class EntryP : Page
     {
-        public Enter()
+        public EntryP()
         {
             InitializeComponent();
-
-            //EntryWin.Navigate(new Enter());
         }
 
-        private void Enter_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MainMenu p1 = new MainMenu();
+            this.NavigationService.Navigate(p1);
         }
     }
 }

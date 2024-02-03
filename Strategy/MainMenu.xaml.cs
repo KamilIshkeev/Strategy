@@ -22,17 +22,24 @@ namespace Strategy
         public MainMenu()
         {
             InitializeComponent();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+            
         }
 
         private void SinglePl_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            //MainWindow p2 = new MainWindow();
+            //this.NavigationService.Navigate(p2);
+        }
     }
 }
+ 
