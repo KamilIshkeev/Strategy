@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="/Image2.png"/>
         </Grid.Background>
 
-        <Button x:Name="StartGame" Content="SinglePlayer" HorizontalAlignment="Left" Height="44" Margin="237,173,0,0" VerticalAlignment="Top" Width="288" Click="SinglePl_Click"/>
+        <Button x:Name="StartGame" Content="SinglePlayer" HorizontalAlignment="Center" Height="44" Margin="0,161,0,0" VerticalAlignment="Top" Width="288" Click="SinglePl_Click"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="36" Margin="665,361,0,0" VerticalAlignment="Top" Width="108" Click="Back_Click"/>
 
     </Grid>
