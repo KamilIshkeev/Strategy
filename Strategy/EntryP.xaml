@@ -8,10 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="EntryP">
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Image1.png"/>
-        </Grid.Background>
+    <Grid x:Name="Jopa" Background="#FF5D4D4D">
         <Button Content="Button" HorizontalAlignment="Left" Height="39" Margin="348,225,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click"/>
 
     </Grid>

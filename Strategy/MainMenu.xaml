@@ -1,18 +1,16 @@
-﻿<Window x:Class="Strategy.MainMenu"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Strategy"
-        mc:Ignorable="d"
-        Title="MainMenu" Height="450" Width="800">
-    <Grid x:Name="MM">
-        <Grid.Background>
-            <ImageBrush ImageSource="/Image2.png"/>
-        </Grid.Background>
+﻿<Page x:Class="Strategy.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Strategy"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMenu">
 
-        <Button x:Name="StartGame" Content="SinglePlayer" HorizontalAlignment="Center" Height="44" Margin="0,161,0,0" VerticalAlignment="Top" Width="288" Click="SinglePl_Click"/>
-        <Button Content="Back" HorizontalAlignment="Left" Height="36" Margin="665,361,0,0" VerticalAlignment="Top" Width="108" Click="Back_Click"/>
+    <Grid Background="White">
+        <Button Content="Button" HorizontalAlignment="Center" Height="66" VerticalAlignment="Center" Width="208" Click="NewGame_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="48" Margin="603,345,0,0" VerticalAlignment="Top" Width="153" Click="Back_Click"/>
 
     </Grid>
-</Window>
+</Page>

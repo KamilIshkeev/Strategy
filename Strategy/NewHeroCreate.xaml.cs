@@ -29,5 +29,16 @@ namespace Strategy
         {
 
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            SelectCharWin p4 = new SelectCharWin();
+            this.NavigationService.Navigate(p4);
+        }
     }
 }

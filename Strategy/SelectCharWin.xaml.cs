@@ -24,5 +24,17 @@ namespace Strategy
         {
             InitializeComponent();
         }
+
+        private void NewHero_Click(object sender, RoutedEventArgs e)
+        {
+            NewHeroCreate p4 = new NewHeroCreate();
+            this.NavigationService.Navigate(p4);
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu p1 = new MainMenu();
+            this.NavigationService.Navigate(p1);
+        }
     }
 }

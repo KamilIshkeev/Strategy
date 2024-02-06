@@ -27,8 +27,8 @@ namespace Strategy
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainMenu p1 = new MainMenu();
-            this.NavigationService.Navigate(p1);
+            MainMenu p2 = new MainMenu();
+            this.NavigationService.Navigate(p2);
         }
     }
 }

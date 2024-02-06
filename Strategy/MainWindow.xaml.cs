@@ -23,6 +23,7 @@ namespace Strategy
         public MainWindow()
         {
             InitializeComponent();
+            WindowState = WindowState.Maximized;
             EntryP p1 = new EntryP();
             OurFrame.NavigationService.Navigate(p1);
         }
