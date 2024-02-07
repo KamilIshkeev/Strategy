@@ -37,7 +37,7 @@ namespace Strategy
             this.MaxStrength = MaxStrength;
             this.MaxDexterity = MaxDexterity;
             this.MaxInteligence = MaxInteligence;
-            this.MaxVitality = MaxVitality;
+            this.Maxvitality = MaxVitality;
             //this.Armor = Armor;  
             //this.MagDam = MagDam;
             //this.MagDef = MagDef;
@@ -47,6 +47,8 @@ namespace Strategy
             //this.CrtChanse = CrtChanse;
             //this.CrtDam = CrtDam;
 
+
+            
         }
 
 

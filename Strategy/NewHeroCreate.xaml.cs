@@ -20,7 +20,7 @@ namespace Strategy
     /// </summary>
     public partial class NewHeroCreate : Page
     {
-        public NewHeroCreate()
+        public NewHeroCreate() 
         {
             InitializeComponent();
         }
@@ -39,6 +39,23 @@ namespace Strategy
         {
             SelectCharWin p4 = new SelectCharWin();
             this.NavigationService.Navigate(p4);
+        }
+
+        private void Warrior_Create(object sender, RoutedEventArgs e)
+        {
+           Warrior warrior = new Warrior();
+
+        }
+        
+
+        private void Rogue_Create(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Wizard_Create(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

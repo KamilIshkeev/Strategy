@@ -26,5 +26,8 @@
         <TextBox x:Name="LevelBox_Копировать" HorizontalAlignment="Left" Height="24" Margin="17,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
         <Label Content="Starpoints:" HorizontalAlignment="Left" Height="32" Margin="17,169,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="92" Margin="1392,916,0,0" VerticalAlignment="Top" Width="468" Click="Back_Click"/>
+        <Button Content="Warrior" HorizontalAlignment="Left" Height="24" Margin="339,141,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Warrior_Create"/>
+        <Button Content="Rogue" HorizontalAlignment="Left" Height="24" Margin="339,170,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Rogue_Create"/>
+        <Button Content="Wizard" HorizontalAlignment="Left" Height="24" Margin="339,199,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Wizard_Create"/>
     </Grid>
 </Page>

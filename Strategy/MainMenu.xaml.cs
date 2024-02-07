@@ -35,11 +35,7 @@ namespace Strategy
 
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            EntryP p1 = new EntryP();
-            this.NavigationService.Navigate(p1);
-        }
+        
 
         private void NewGame_Click(object sender, RoutedEventArgs e)
         {

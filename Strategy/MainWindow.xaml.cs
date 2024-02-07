@@ -24,8 +24,8 @@ namespace Strategy
         {
             InitializeComponent();
             WindowState = WindowState.Maximized;
-            EntryP p1 = new EntryP();
-            OurFrame.NavigationService.Navigate(p1);
+            MainMenu p2 = new MainMenu();
+            OurFrame.NavigationService.Navigate(p2);
         }
 
         
