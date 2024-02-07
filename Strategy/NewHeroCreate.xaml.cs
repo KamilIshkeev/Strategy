@@ -43,8 +43,10 @@ namespace Strategy
 
         private void Warrior_Create(object sender, RoutedEventArgs e)
         {
-           Warrior warrior = new Warrior();
-
+            Warrior warrior = new Warrior(/*Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality*/30, 15, 10, 25, 250, 80, 50, 100);
+            //(30, 15, 10, 25, 250, 80, 50, 100);
+            string xm = "Ай молодец! ";
+            StrBox.Text = xm;
         }
         
 

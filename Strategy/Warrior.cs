@@ -14,7 +14,7 @@ namespace Strategy
             Dexterity = 15;
             Inteligence = 10;
             Vitality = 25;
-            MaxStrengt = 250;
+            MaxStrength = 250;
             MaxDexterity = 80;
             MaxInteligence = 50;
             MaxVitality = 100;
