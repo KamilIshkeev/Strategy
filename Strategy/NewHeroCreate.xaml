@@ -9,22 +9,22 @@
       Title="NewHeroCreate">
 
     <Grid Background="#FF282727">
-        <TextBox x:Name="StrBox" HorizontalAlignment="Left" Height="24" Margin="107,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Strength:" HorizontalAlignment="Left" Height="32" Margin="17,230,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
-        <TextBox x:Name="DexBox" HorizontalAlignment="Left" Height="24" Margin="107,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Dexterity:" HorizontalAlignment="Left" Height="32" Margin="17,259,0,0" VerticalAlignment="Top" Width="112" Foreground="White"/>
-        <TextBox x:Name="IntBox" HorizontalAlignment="Left" Height="24" Margin="107,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Inteligence:" HorizontalAlignment="Left" Height="32" Margin="17,288,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
-        <TextBox x:Name="VitBox" HorizontalAlignment="Left" Height="24" Margin="107,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Vitality:" HorizontalAlignment="Left" Height="32" Margin="17,318,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
-        <TextBox x:Name="LevelBox" HorizontalAlignment="Left" Height="24" Margin="107,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Level:" HorizontalAlignment="Left" Height="32" Margin="17,141,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
-        <TextBox x:Name="HealBox" HorizontalAlignment="Left" Height="24" Margin="107,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Health:" HorizontalAlignment="Left" Height="32" Margin="17,347,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
-        <TextBox x:Name="ManaBox" HorizontalAlignment="Left" Height="24" Margin="107,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Mana:" HorizontalAlignment="Left" Height="32" Margin="17,376,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
+        <Label x:Name="StrBox" HorizontalAlignment="Left" Height="24" Margin="107,230,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Strenght" HorizontalAlignment="Left" Height="32" Margin="17,230,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
+        <Label x:Name="DexBox" HorizontalAlignment="Left" Height="24" Margin="107,259,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Dexternity" HorizontalAlignment="Left" Height="24" Margin="17,259,0,0" VerticalAlignment="Top" Width="76" Foreground="White"/>
+        <Label x:Name="IntBox" HorizontalAlignment="Left" Height="24" Margin="107,288,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Inteligence:" HorizontalAlignment="Left" Height="32" Margin="17,288,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
+        <Label x:Name="VitBox" HorizontalAlignment="Left" Height="24" Margin="107,318,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Vitality:" HorizontalAlignment="Left" Height="32" Margin="17,318,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
+        <Label x:Name="LevelBox" HorizontalAlignment="Left" Height="24" Margin="107,141,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Level:" HorizontalAlignment="Left" Height="32" Margin="17,141,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
+        <Label x:Name="HealBox" HorizontalAlignment="Left" Height="24" Margin="107,347,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Health:" HorizontalAlignment="Left" Height="32" Margin="17,347,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
+        <Label x:Name="ManaBox" HorizontalAlignment="Left" Height="24" Margin="107,376,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
+        <TextBlock Text="Mana:" HorizontalAlignment="Left" Height="32" Margin="17,376,0,0" VerticalAlignment="Top" Width="97" Foreground="White"/>
         <TextBox x:Name="LevelBox_Копировать" HorizontalAlignment="Left" Height="24" Margin="17,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
-        <Label Content="Starpoints:" HorizontalAlignment="Left" Height="32" Margin="17,169,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
+        <TextBlock Text="Starpoints:" HorizontalAlignment="Left" Height="32" Margin="17,169,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="92" Margin="1392,916,0,0" VerticalAlignment="Top" Width="468" Click="Back_Click"/>
         <Button Content="Warrior" HorizontalAlignment="Left" Height="24" Margin="339,141,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Warrior_Create"/>
         <Button Content="Rogue" HorizontalAlignment="Left" Height="24" Margin="339,170,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Rogue_Create"/>

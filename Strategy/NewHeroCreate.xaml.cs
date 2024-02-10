@@ -43,16 +43,29 @@ namespace Strategy
 
         private void Warrior_Create(object sender, RoutedEventArgs e)
         {
-            Warrior warrior = new Warrior(/*Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality*/30, 15, 10, 25, 250, 80, 50, 100);
-            //(30, 15, 10, 25, 250, 80, 50, 100);
-            string xm = "Ай молодец! ";
-            StrBox.Text = xm;
+            //Warrior warrior = new Warrior(30, 15, 10, 25, 250, 80, 50, 100);
+            Heroes hero = new Heroes(30, 15, 10, 25, 250, 80, 50, 100,150,200);
+            hero.Health = hero.Vitality * 2;
+            StrBox.Content = hero.MaxStrength;
+            DexBox.Content = hero.Dexterity;
+            IntBox.Content = hero.Inteligence;
+            VitBox.Content = hero.Vitality;
+            HealBox.Content = hero.Health;
+            ManaBox.Content = hero.Mana;
+
         }
         
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
         {
+            Heroes hero = new Heroes(30, 15, 10, 25, 250, 80, 50, 100, 150, 200);
 
+            StrBox.Content = hero.MaxStrength;
+            DexBox.Content = hero.Dexterity;
+            IntBox.Content = hero.Inteligence;
+            VitBox.Content = hero.Vitality;
+            HealBox.Content = hero.Health;
+            ManaBox.Content = hero.Mana;
         }
 
         private void Wizard_Create(object sender, RoutedEventArgs e)

@@ -8,7 +8,7 @@ namespace Strategy
 {
     internal class Warrior : Heroes
     {
-        public Warrior(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality/*, int Health, int Mana, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality)
+        public Warrior(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality, Health, Mana)
         {
             Strength = 30;
             Dexterity = 15;
@@ -19,6 +19,11 @@ namespace Strategy
             MaxInteligence = 50;
             MaxVitality = 100;
 
+            Health = Vitality * 2;
+            Mana = Inteligence;
+
+            //PhysDam = Strength;
+            
 
         }
     }

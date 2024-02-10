@@ -27,7 +27,7 @@ namespace Strategy
         public int CrtChanse;
         public int CrtDam;
 
-        public Heroes (int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality/*, int Health, int Mana, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) 
+        public Heroes (int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) 
         { 
         
             this.Strength = Strength;
@@ -38,17 +38,25 @@ namespace Strategy
             this.MaxDexterity = MaxDexterity;
             this.MaxInteligence = MaxInteligence;
             this.MaxVitality = MaxVitality;
-            //this.Armor = Armor;  
+
+            this.Health = Health;
+            this.Mana = Mana;
+
+
+
+
+
+
+            //this.Armor = Armor;
             //this.MagDam = MagDam;
             //this.MagDef = MagDef;
             //this.Health = Health;
             //this.PhysDam = PhysDam;
-            //this.Armor = Armor;
             //this.CrtChanse = CrtChanse;
             //this.CrtDam = CrtDam;
 
 
-            
+
         }
 
 

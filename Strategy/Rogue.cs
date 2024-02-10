@@ -10,7 +10,7 @@ namespace Strategy
     {
       
 
-        public Rogue() : base(30, 15, 10, 25, 250, 80, 50, 100)
+        public Rogue() : base(30, 15, 10, 25, 250, 80, 50, 100, 150, 200)
         {
 
 
