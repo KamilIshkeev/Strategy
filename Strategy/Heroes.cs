@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    internal class Heroes   
+    internal class Heroes
     {
-        public int Strength;
-        public int Dexterity;
+
+
+
+        public double Strength { get; set; }
+        public int Dexterity { get; set; }
         public int Inteligence;
-        public int Vitality;
+        public double Vitality;
         public int MaxStrength;
         public int MaxDexterity;
         public int MaxInteligence;
         public int MaxVitality;
 
-        public int Health;
-        public int Mana;
+        public int Health { get; set; }
+        public int Mana { get; set; }
 
         public int PhysDam;
         public int Armor;
@@ -27,23 +30,23 @@ namespace Strategy
         public int CrtChanse;
         public int CrtDam;
 
-        public Heroes (int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) 
-        { 
-        
-            this.Strength = Strength;
-            this.Dexterity = Dexterity;
-            this.Inteligence = Inteligence;
-            this.Vitality = Vitality;
-            this.MaxStrength = MaxStrength;
-            this.MaxDexterity = MaxDexterity;
-            this.MaxInteligence = MaxInteligence;
-            this.MaxVitality = MaxVitality;
+        public Heroes(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/)
+        {
 
-            this.Health = Health;
-            this.Mana = Mana;
+            int Str = Strength;
+            int Dex = Dexterity;
+            int Intel = Inteligence;
+            int Vit = Vitality;
+            int MaxStr = MaxStrength;
+            int MaxDex = MaxDexterity;
+            int MaxIntel = MaxInteligence;
+            int MaxVit = MaxVitality;
 
+            int HP = Health;
+            int MP = Mana;
+        }
 
-
+        //public int Health();
 
 
 
@@ -56,22 +59,22 @@ namespace Strategy
             //this.CrtDam = CrtDam;
 
 
+    public void LevelUp()
+    {
+            
+    }
+       
+   
 
-        }
 
-
-
-
-        public virtual void lvl_Up()
-        {
-
-        }
-
+     
 
 
 
 
 
+
+ }
 
 
 
@@ -82,4 +85,4 @@ namespace Strategy
 
 
 
-}
+

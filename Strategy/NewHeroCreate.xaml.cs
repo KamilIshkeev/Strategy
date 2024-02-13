@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,7 +21,7 @@ namespace Strategy
     /// </summary>
     public partial class NewHeroCreate : Page
     {
-        public NewHeroCreate() 
+        public NewHeroCreate()
         {
             InitializeComponent();
         }
@@ -43,34 +44,60 @@ namespace Strategy
 
         private void Warrior_Create(object sender, RoutedEventArgs e)
         {
-            //Warrior warrior = new Warrior(30, 15, 10, 25, 250, 80, 50, 100);
-            Heroes hero = new Heroes(30, 15, 10, 25, 250, 80, 50, 100,150,200);
-            hero.Health = hero.Vitality * 2;
-            StrBox.Content = hero.MaxStrength;
-            DexBox.Content = hero.Dexterity;
-            IntBox.Content = hero.Inteligence;
-            VitBox.Content = hero.Vitality;
-            HealBox.Content = hero.Health;
-            ManaBox.Content = hero.Mana;
+            Warrior war = new Warrior(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
+            war.Strength  = 30;
+            war.Dexterity = 15;
+            war.Inteligence = 10;
+            war.Vitality = 25;
+            war.Health= 0;
+            war.Mana = 0;
+
+            StrBox.Content = war.Strength;
+            DexBox.Content = war.Dexterity;
+            IntBox.Content = war.Inteligence;
+            VitBox.Content = war.Vitality;
+            HealBox.Content = war.Strength + war.Vitality * 2;
+            ManaBox.Content = war.Inteligence;
         }
-        
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
         {
-            Heroes hero = new Heroes(30, 15, 10, 25, 250, 80, 50, 100, 150, 200);
+            Heroes hero = new Heroes(20, 30, 15, 20, 65, 250, 70, 80,0,0);
+            hero.Strength = 20;
+            hero.Dexterity = 30;
+            hero.Inteligence = 15;
+            hero.Vitality = 20;
+            hero.Health = 0;
+            hero.Mana = 0;
 
-            StrBox.Content = hero.MaxStrength;
+            StrBox.Content = hero.Strength;
             DexBox.Content = hero.Dexterity;
             IntBox.Content = hero.Inteligence;
             VitBox.Content = hero.Vitality;
-            HealBox.Content = hero.Health;
-            ManaBox.Content = hero.Mana;
+            HealBox.Content = 0.5 *hero.Strength + hero.Vitality * 1.5;
+            ManaBox.Content = hero.Inteligence;
+
+
+
         }
 
         private void Wizard_Create(object sender, RoutedEventArgs e)
         {
 
         }
-    }
+        /*Warrior warrior = new Warrior(int Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality*/
+
+        //ManaBox.Content = hero.Mana;
+    }    
+        //    public int Health { get; set; }
+        //public int Vitality { get; set; }
+     
+
+    
+        
+
+        
+
+       
 }

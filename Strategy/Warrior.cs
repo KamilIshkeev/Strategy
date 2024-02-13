@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,10 @@ namespace Strategy
 {
     internal class Warrior : Heroes
     {
+       //public override int Health 
+       //     {
+       //     get
+        
         public Warrior(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality, Health, Mana)
         {
             Strength = 30;
@@ -22,9 +27,13 @@ namespace Strategy
             Health = Vitality * 2;
             Mana = Inteligence;
 
+
+
             //PhysDam = Strength;
-            
+
 
         }
+    
     }
+
 }
