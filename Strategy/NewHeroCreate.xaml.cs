@@ -21,10 +21,15 @@ namespace Strategy
     /// </summary>
     public partial class NewHeroCreate : Page
     {
+
+        public int vr;
         public NewHeroCreate()
         {
             InitializeComponent();
+
+          
         }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -44,6 +49,7 @@ namespace Strategy
 
         private void Warrior_Create(object sender, RoutedEventArgs e)
         {
+            vr = 1;
             Warrior war = new Warrior(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
             war.Strength  = 30;
@@ -59,10 +65,13 @@ namespace Strategy
             VitBox.Content = war.Vitality;
             HealBox.Content = war.Strength + war.Vitality * 2;
             ManaBox.Content = war.Inteligence;
+
+           
         }
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
         {
+            vr = 2;
             Heroes hero = new Heroes(20, 30, 15, 20, 65, 250, 70, 80,0,0);
             hero.Strength = 20;
             hero.Dexterity = 30;
@@ -71,6 +80,7 @@ namespace Strategy
             hero.Health = 0;
             hero.Mana = 0;
 
+            
             StrBox.Content = hero.Strength;
             DexBox.Content = hero.Dexterity;
             IntBox.Content = hero.Inteligence;
@@ -84,8 +94,39 @@ namespace Strategy
 
         private void Wizard_Create(object sender, RoutedEventArgs e)
         {
-
+            
         }
+
+        private void StrPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                Warrior war = new Warrior(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
+                war.Strength = 30;
+                war.Dexterity = 15;
+                war.Inteligence = 10;
+                war.Vitality = 25;
+                war.Health = 0;
+                war.Mana = 0;
+
+
+
+                war.Strength = war.Strength + 1;
+                StrBox.Content = war.Strength;
+                a = a +1;
+                StrBox.Content = a;
+            }
+             else if (vr == 2)
+            {
+
+            }
+            else if(vr == 3)
+            {
+
+            }
+        }
+int a = 0;
+
         /*Warrior warrior = new Warrior(int Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality*/
 
         //ManaBox.Content = hero.Mana;
