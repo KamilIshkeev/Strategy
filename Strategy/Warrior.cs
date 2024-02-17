@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Converters;
 
 namespace Strategy
 {
@@ -13,19 +14,19 @@ namespace Strategy
        //     {
        //     get
         
-        public Warrior(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality, Health, Mana)
+        public  Warrior(int strength, int dexterity, int inteligence, int vitality, int maxstrength, int maxdexterity, int maxinteligence, int maxvitality, int health, int mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(strength, dexterity, inteligence, vitality, maxstrength, maxdexterity, maxinteligence, maxvitality, health, mana)
         {
-            Strength = 30;
-            Dexterity = 15;
-            Inteligence = 10;
-            Vitality = 25;
-            MaxStrength = 250;
-            MaxDexterity = 80;
-            MaxInteligence = 50;
-            MaxVitality = 100;
+            strength = Strength;
+            dexterity = Dexterity;
+            inteligence = Inteligence;
+            vitality = Vitality;
+            maxstrength = MaxStrength;
+            maxdexterity = MaxDexterity;
+            maxinteligence = MaxInteligence;
+            maxvitality = MaxVitality;
 
-            Health = Vitality * 2;
-            Mana = Inteligence;
+            Health = Health;
+            Mana = Mana;
 
 
 

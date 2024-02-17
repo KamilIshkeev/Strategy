@@ -11,10 +11,10 @@ namespace Strategy
 
 
 
-        public double Strength { get; set; }
+        public int Strength { get; set; }
         public int Dexterity { get; set; }
         public int Inteligence;
-        public double Vitality;
+        public int Vitality;
         public int MaxStrength;
         public int MaxDexterity;
         public int MaxInteligence;

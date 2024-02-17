@@ -52,11 +52,11 @@ namespace Strategy
             vr = 1;
             Warrior war = new Warrior(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
-            war.Strength  = 30;
+            war.Strength = 30;
             war.Dexterity = 15;
             war.Inteligence = 10;
             war.Vitality = 25;
-            war.Health= 0;
+            war.Health = 0;
             war.Mana = 0;
 
             StrBox.Content = war.Strength;
@@ -102,21 +102,21 @@ namespace Strategy
             if (vr == 1)
             {
                 Warrior war = new Warrior(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
-                war.Strength = 30;
+int a = 30;
+                war.Strength = a;
                 war.Dexterity = 15;
                 war.Inteligence = 10;
                 war.Vitality = 25;
                 war.Health = 0;
                 war.Mana = 0;
-
-
-
-                war.Strength = war.Strength + 1;
-                StrBox.Content = war.Strength;
-                a = a +1;
+               
+                //war.Strength = ;
+                a =  a + 1;
                 StrBox.Content = a;
+                // = a +1;war.Strength
+                //StrBox.Content = a;
             }
-             else if (vr == 2)
+            else if (vr == 2)
             {
 
             }
@@ -124,8 +124,13 @@ namespace Strategy
             {
 
             }
+            
         }
-int a = 0;
+        
+
+
+
+
 
         /*Warrior warrior = new Warrior(int Strength, Dexterity, Inteligence, Vitality, MaxStrength, MaxDexterity, MaxInteligence, MaxVitality*/
 
