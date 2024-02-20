@@ -30,5 +30,6 @@
         <Button Content="Rogue" HorizontalAlignment="Left" Height="24" Margin="339,170,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Rogue_Create"/>
         <Button Content="Wizard" HorizontalAlignment="Left" Height="24" Margin="339,199,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Wizard_Create"/>
         <Button x:Name="StrPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,230,0,0" VerticalAlignment="Top" Width="31" Click="StrPls_Click"/>
+        <Button x:Name="DexPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,259,0,0" VerticalAlignment="Top" Width="31" Click="DexPls_Click"/>
     </Grid>
 </Page>

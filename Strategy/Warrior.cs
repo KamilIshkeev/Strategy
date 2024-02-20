@@ -8,33 +8,33 @@ using System.Windows.Media.Converters;
 
 namespace Strategy
 {
-    internal class Warrior : Heroes
-    {
-       //public override int Health 
-       //     {
-       //     get
+    //internal class Warrior : Heroes
+    //{
+    //   //public override int Health 
+    //   //     {
+    //   //     get
         
-        public  Warrior(int strength, int dexterity, int inteligence, int vitality, int maxstrength, int maxdexterity, int maxinteligence, int maxvitality, int health, int mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/) : base(strength, dexterity, inteligence, vitality, maxstrength, maxdexterity, maxinteligence, maxvitality, health, mana)
-        {
-            strength = Strength;
-            dexterity = Dexterity;
-            inteligence = Inteligence;
-            vitality = Vitality;
-            maxstrength = MaxStrength;
-            maxdexterity = MaxDexterity;
-            maxinteligence = MaxInteligence;
-            maxvitality = MaxVitality;
+    //    //public  Warrior() 
+    //    //{
+    //    //    //strength = Strength;
+    //    //    //dexterity = Dexterity;
+    //    //    //inteligence = Inteligence;
+    //    //    //vitality = Vitality;
+    //    //    //maxstrength = MaxStrength;
+    //    //    //maxdexterity = MaxDexterity;
+    //    //    //maxinteligence = MaxInteligence;
+    //    //    //maxvitality = MaxVitality;
 
-            Health = Health;
-            Mana = Mana;
-
-
-
-            //PhysDam = Strength;
+    //    //    //Health = Health;
+    //    //    //Mana = Mana;
 
 
-        }
+
+    //    //    //PhysDam = Strength;
+
+
+    //    //}
     
-    }
+    //}
 
 }

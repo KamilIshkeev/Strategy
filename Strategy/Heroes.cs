@@ -46,6 +46,12 @@ namespace Strategy
             int MP = Mana;
         }
 
+        //public void PlsStr()
+        //{
+        //    int a = Strength + 1;
+        //}
+
+
         //public int Health();
 
 
