@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Strategy
 {
@@ -35,9 +36,14 @@ namespace Strategy
         {
 
         }
-
+        int text = 0;
+       
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
+            //text = Convert.ToInt32(LevlBox.Text);
+            text = Convert.ToInt32(LevlBox.Text);
+
+            //text = int.Parse(LevlBox.Text);
 
         }
 
@@ -50,6 +56,8 @@ namespace Strategy
         private void Warrior_Create(object sender, RoutedEventArgs e)
         {
             vr = 1;
+            Wir.Visibility = Visibility.Visible;
+            
             //Heroes war = new Heroes(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
             Strength1 = 30;
@@ -67,7 +75,7 @@ namespace Strategy
             HealBox.Content = Strength1 + Vitality1 * 2;
             ManaBox.Content = Inteligence1;
 
-           
+            
         }
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
@@ -81,6 +89,7 @@ namespace Strategy
             //hero.Health = 0;
             //hero.Mana = 0;
 
+            Rog.Visibility = Visibility.Visible;
 
             Strength2 = 20;
             Dexterity2 = 30;
@@ -104,6 +113,8 @@ namespace Strategy
 
         private void Wizard_Create(object sender, RoutedEventArgs e)
         {
+
+            Wiz.Visibility = Visibility.Visible;
             vr = 3;
             Strength3 = 30;
             Dexterity3 = 15;
@@ -144,34 +155,318 @@ namespace Strategy
 
        
 
+
+
+
+
+               
+
+                
+
+
+
         private void StrPls_Click(object sender, RoutedEventArgs e)
         {
             if (vr == 1)
-            {
-
-                Strength1 +=1;
-                StrBox.Content = Strength1;
-
+            { 
+                if (Strength1 < 250)
+                { 
+                 Strength1 += 1;
+                 StrBox.Content = Strength1;
+                 text -= 1;
+                 LevlBox.Text = Convert.ToString(text); 
+                }
+                else if(Strength1 >250)
+                {
+                    StrBox.Content = 250;
+                }
+               
+            
             }
             else if (vr == 2)
             {
+                if (Strength2 < 65)
+                {
                 Strength2 += 1;
                 StrBox.Content = Strength2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Strength2 > 65)
+                {
+                    StrBox.Content = 65;
+                }
+                
+                
             }
             else if(vr == 3)
             {
+                if (Strength3 < 45)
+                {
                 Strength3 += 1;
                 StrBox.Content = Strength3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Strength3 > 45)
+                {
+                    StrBox.Content = 45;
+                }
+                
+                
+                
             }
             
         }
 
-       
-        
+        private void DexPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Dexterity1 < 80)
+                {
+                Dexterity1 += 1;
+                DexBox.Content = Dexterity1;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity1 > 80)
+                {
+                    DexBox.Content = 80;
+                }
+               
 
+            }
+            else if (vr == 2)
+            {
+                if (Dexterity2 < 250)
+                {
+                Dexterity2 += 1;
+                DexBox.Content = Dexterity2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity2 > 250)
+                {
+                    DexBox.Content = 250;
+                }
+                
+            }
+            else if (vr == 3)
+            {
+                if (Dexterity3 < 80)
+                {
+                Dexterity3 += 1;
+                DexBox.Content = Dexterity3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity3 > 80)
+                {
+                   DexBox.Content = 80;
+                }
+                
+            }
+        }
 
+        private void IntPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Inteligence1 < 50)
+                {
+                Inteligence1 += 1;
+                IntBox.Content = Inteligence1;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence1 > 50)
+                {
+                    IntBox.Content = 50;
+                }
 
-      
+                
+            }
+            else if (vr == 2)
+            {
+                if (Inteligence2 < 70)
+                {
+                Inteligence2 += 1;
+                IntBox.Content = Inteligence2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence2 > 70)
+                {
+                    IntBox.Content = 70;
+                }
+               
+            }
+            else if (vr == 3)
+            {
+                if (Inteligence3 < 250)
+                {
+                Inteligence3 += 1;
+                IntBox.Content = Inteligence3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence3 > 250)
+                {
+                    IntBox.Content = 250;
+                }
+                
+            }
+        }
+
+        private void VitPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Vitality1 < 100)
+                {
+                Vitality1 += 1;
+                VitBox.Content = Vitality1;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality1 > 100)
+                {
+                    VitBox.Content = 100;
+                }
+               
+
+            }
+            else if (vr == 2)
+            {
+                if (Vitality2 < 80)
+                {
+                Vitality2 += 1;
+                VitBox.Content = Vitality2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality2 > 80)
+                {
+                    VitBox.Content = 80;
+                }
+               
+            }
+            else if (vr == 3)
+            {
+                if (Vitality3 < 70)
+                {
+                Vitality3 += 1;
+                VitBox.Content = Vitality3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality3 > 70)
+                {
+                    VitBox.Content = 70;
+                }
+                
+            }
+        }
+
+        private void HPPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Health1 < 100)
+                {
+                Health1 += 1;
+                HealBox.Content = Health1;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Health1 > 100)
+                {
+                    HealBox.Content = 100;
+                }
+                
+
+            }
+            else if (vr == 2)
+            {
+                if (Health2 < 100)
+                {
+                Health2 += 1;
+                HealBox.Content = Health2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Health2 > 100)
+                {
+                    HealBox.Content = 100;
+                }
+               
+            }
+            else if (vr == 3)
+            {
+                if (Health3 < 100)
+                {
+                Health3 += 1;
+                HealBox.Content = Health3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Health3 > 100)
+                {
+                    HealBox.Content = 100;
+                }
+                
+            }
+        }
+
+        private void MPPls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Mana1 < 200)
+                {
+                Mana1 += 1;
+                ManaBox.Content = Mana1;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Mana1 > 200)
+                {
+                    ManaBox.Content = 200;
+                }
+                
+            }
+            else if (vr == 2)
+            {
+                if (Mana2 < 200)
+                {
+                Mana2 += 1;
+                ManaBox.Content = Mana2;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Mana2 > 200)
+                {
+                    ManaBox.Content = 200;
+                }
+               
+            }
+            else if (vr == 3)
+            {
+                if (Mana3 < 300)
+                {
+                Mana3 += 1;
+                ManaBox.Content = Mana3;
+                text -= 1;
+                LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Mana3 > 300)
+                {
+                    ManaBox.Content = 300;
+                }
+             
+            }
+        }
     }    
         
      
