@@ -136,7 +136,7 @@ namespace Strategy
             ManaBox.Content = Inteligence3;
         }
 
-        int Strength2 = 20;
+        double Strength2 = 20;
         int Dexterity2 = 30;
         int Inteligence2 = 15;
         int Vitality2 = 20;
@@ -144,14 +144,14 @@ namespace Strategy
         int Mana2 = 0;
 
        
-        int Strength1 = 30;
+        double Strength1 = 30;
         int Dexterity1 = 15;
         int Inteligence1 = 10;
         int Vitality1 = 25;
         int Health1 = 0;
         int Mana1 = 0;
 
-        int Strength3 = 30;
+        double Strength3 = 30;
         int Dexterity3 = 15;
         int Inteligence3 = 10;
         int Vitality3 = 25;
@@ -187,7 +187,15 @@ namespace Strategy
                 {
                     StrBox.Content = 250;
                 }
-               
+                //while(Strength1 < 250)
+                //{ 
+                // if (Strength1 > Strength1 + 15  ) 
+                // {
+                //    lvl += 1;
+                //    LevelBox.Content = lvl;
+                // }
+                //}
+                
             
             }
             else if (vr == 2)
