@@ -9,6 +9,7 @@
       Title="NewHeroCreate">
 
     <Grid Background="#FF282727">
+
         <Label x:Name="StrBox" HorizontalAlignment="Left" Height="24" Margin="107,230,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
         <TextBlock Text="Strenght" HorizontalAlignment="Left" Height="32" Margin="17,230,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
         <Label x:Name="DexBox" HorizontalAlignment="Left" Height="24" Margin="107,259,0,0" VerticalAlignment="Top" Width="126" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
@@ -31,9 +32,9 @@
         <Button Content="Wizard" HorizontalAlignment="Left" Height="24" Margin="339,199,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Wizard_Create"/>
         <Button x:Name="StrPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,229,0,0" VerticalAlignment="Top" Width="31" Click="StrPls_Click"/>
         <Button x:Name="DexPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,258,0,0" VerticalAlignment="Top" Width="31" Click="DexPls_Click"/>
-        <Image x:Name="Wir" Margin="565,97,1137,711" Source="/IMG/Wir.png" Stretch="Fill" Visibility="Hidden"/>
-        <Image x:Name="Wiz" Margin="565,97,1137,711" Source="/IMG/Wiz.png" Stretch="Fill" Visibility="Hidden"/>
-        <Image x:Name="Rog" Margin="565,97,1137,711" Source="/IMG/Rog.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="Wiz" Margin="565,97,1137,711" Source="/Wiz.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="Wir" Margin="565,97,1137,711" Source="/Wir.png" Stretch="Fill" Visibility="Hidden" />
+        <Image x:Name="Rog" Margin="565,97,1137,711" Source="/Rog.png" Stretch="Fill" Visibility="Hidden"/>
         <Button x:Name="IntPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,287,0,0" VerticalAlignment="Top" Width="31" Click="IntPls_Click"/>
         <Button x:Name="VitPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,317,0,0" VerticalAlignment="Top" Width="31" Click="VitPls_Click"/>
         <Button x:Name="HPPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,347,0,0" VerticalAlignment="Top" Width="31" Click="HPPls_Click"/>

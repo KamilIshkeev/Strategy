@@ -27,8 +27,8 @@ namespace Strategy
         public NewHeroCreate()
         {
             InitializeComponent();
+            
 
-          
         }
 
 
@@ -36,8 +36,10 @@ namespace Strategy
         {
 
         }
+        int lvl= 1 ;
         int text = 0;
-       
+        
+
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             //text = Convert.ToInt32(LevlBox.Text);
@@ -57,7 +59,9 @@ namespace Strategy
         {
             vr = 1;
             Wir.Visibility = Visibility.Visible;
-            
+
+            LevelBox.Content = lvl;
+
             //Heroes war = new Heroes(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
             Strength1 = 30;
@@ -88,7 +92,7 @@ namespace Strategy
             //hero.Vitality = 20;
             //hero.Health = 0;
             //hero.Mana = 0;
-
+            LevelBox.Content = lvl;
             Rog.Visibility = Visibility.Visible;
 
             Strength2 = 20;
@@ -114,6 +118,7 @@ namespace Strategy
         private void Wizard_Create(object sender, RoutedEventArgs e)
         {
 
+            LevelBox.Content = lvl;
             Wiz.Visibility = Visibility.Visible;
             vr = 3;
             Strength3 = 30;
@@ -174,7 +179,9 @@ namespace Strategy
                  Strength1 += 1;
                  StrBox.Content = Strength1;
                  text -= 1;
-                 LevlBox.Text = Convert.ToString(text); 
+                 LevlBox.Text = Convert.ToString(text);
+                    
+
                 }
                 else if(Strength1 >250)
                 {
@@ -467,6 +474,13 @@ namespace Strategy
              
             }
         }
+
+       
+
+
+
+
+
     }    
         
      

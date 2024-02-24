@@ -26,9 +26,10 @@ namespace Strategy
             WindowState = WindowState.Maximized;
             MainMenu p2 = new MainMenu();
             OurFrame.NavigationService.Navigate(p2);
+
         }
 
-        
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
