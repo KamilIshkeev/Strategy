@@ -23,8 +23,7 @@ namespace Strategy
         public MainMenu()
         {
             InitializeComponent();
-            Window1 win1 = new Window1();
-            win1.Show();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
