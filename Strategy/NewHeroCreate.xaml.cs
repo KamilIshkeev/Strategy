@@ -61,8 +61,9 @@ namespace Strategy
             Wir.Visibility = Visibility.Visible;
             Rog.Visibility = Visibility.Hidden;
             Wiz.Visibility = Visibility.Hidden;
+            
+            LevelBox.Content = 1;
             LevelBox.Content = lvl;
-
             //Heroes war = new Heroes(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
             Strength1 = 30;
@@ -94,6 +95,8 @@ namespace Strategy
             //hero.Vitality = 20;
             //hero.Health = 0;
             //hero.Mana = 0;
+           
+            LevelBox.Content = 1;
             LevelBox.Content = lvl;
             Wir.Visibility = Visibility.Hidden;
             Rog.Visibility = Visibility.Visible;
@@ -121,6 +124,8 @@ namespace Strategy
         private void Wizard_Create(object sender, RoutedEventArgs e)
         {
 
+           
+            LevelBox.Content = 1;
             LevelBox.Content = lvl;
             Wir.Visibility = Visibility.Hidden;
             Rog.Visibility = Visibility.Hidden;
@@ -165,10 +170,10 @@ namespace Strategy
         int Vitality3 = 25;
         double Health3 = 0;
         double Mana3 = 0;
-        
-        
-       
 
+
+
+        int t = 10;
 
 
 
@@ -303,9 +308,9 @@ namespace Strategy
                 else if (Inteligence1 > 50)
                 {
                     IntBox.Content = 50;
+                    
                 }
-
-                
+           
             }
             else if (vr == 2)
             {
