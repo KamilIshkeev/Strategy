@@ -59,7 +59,8 @@ namespace Strategy
         {
             vr = 1;
             Wir.Visibility = Visibility.Visible;
-
+            Rog.Visibility = Visibility.Hidden;
+            Wiz.Visibility = Visibility.Hidden;
             LevelBox.Content = lvl;
 
             //Heroes war = new Heroes(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
@@ -93,8 +94,9 @@ namespace Strategy
             //hero.Health = 0;
             //hero.Mana = 0;
             LevelBox.Content = lvl;
+            Wir.Visibility = Visibility.Hidden;
             Rog.Visibility = Visibility.Visible;
-
+            Wiz.Visibility = Visibility.Hidden;
             Strength2 = 20;
             Dexterity2 = 30;
             Inteligence2 = 15;
@@ -119,6 +121,8 @@ namespace Strategy
         {
 
             LevelBox.Content = lvl;
+            Wir.Visibility = Visibility.Hidden;
+            Rog.Visibility = Visibility.Hidden;
             Wiz.Visibility = Visibility.Visible;
             vr = 3;
             Strength3 = 30;
@@ -180,21 +184,15 @@ namespace Strategy
                  StrBox.Content = Strength1;
                  text -= 1;
                  LevlBox.Text = Convert.ToString(text);
-                    
+                    Health1 += 1;
+                    HealBox.Content = Health1;
 
                 }
                 else if(Strength1 >250)
                 {
                     StrBox.Content = 250;
                 }
-                //while(Strength1 < 250)
-                //{ 
-                // if (Strength1 > Strength1 + 15  ) 
-                // {
-                //    lvl += 1;
-                //    LevelBox.Content = lvl;
-                // }
-                //}
+               
                 
             
             }
@@ -344,6 +342,9 @@ namespace Strategy
                 VitBox.Content = Vitality1;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+
+                    Health1 += 2;
+                    HealBox.Content = Health1;
                 }
                 else if (Vitality1 > 100)
                 {
@@ -483,10 +484,219 @@ namespace Strategy
             }
         }
 
-       
+        private void Str10Pls_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (vr == 1)
+            {
+                if (Strength1 < 250)
+                {
+                    Strength1 += 10;
+                    StrBox.Content = Strength1;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+
+
+                }
+                else if (Strength1 > 250)
+                {
+                    StrBox.Content = 250;
+                }
 
 
 
+            }
+            else if (vr == 2)
+            {
+                if (Strength2 < 65)
+                {
+                    Strength2 += 10;
+                    StrBox.Content = Strength2;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Strength2 > 65)
+                {
+                    StrBox.Content = 65;
+                }
+
+
+            }
+            else if (vr == 3)
+            {
+                if (Strength3 < 45)
+                {
+                    Strength3 += 10;
+                    StrBox.Content = Strength3;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Strength3 > 45)
+                {
+                    StrBox.Content = 45;
+                }
+
+
+
+            }
+
+        }
+
+        private void Dex10Pls_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (vr == 1)
+            {
+                if (Dexterity1 < 80)
+                {
+                    Dexterity1 += 10;
+                    DexBox.Content = Dexterity1;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity1 > 80)
+                {
+                    DexBox.Content = 80;
+                }
+
+
+            }
+            else if (vr == 2)
+            {
+                if (Dexterity2 < 250)
+                {
+                    Dexterity2 += 10;
+                    DexBox.Content = Dexterity2;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity2 > 250)
+                {
+                    DexBox.Content = 250;
+                }
+
+            }
+            else if (vr == 3)
+            {
+                if (Dexterity3 < 80)
+                {
+                    Dexterity3 += 10;
+                    DexBox.Content = Dexterity3;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Dexterity3 > 80)
+                {
+                    DexBox.Content = 80;
+                }
+
+            }
+
+        }
+
+        private void Int10Pls_Click(object sender, RoutedEventArgs e)
+        {
+            if (vr == 1)
+            {
+                if (Inteligence1 < 50)
+                {
+                    Inteligence1 += 10;
+                    IntBox.Content = Inteligence1;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence1 > 50)
+                {
+                    IntBox.Content = 50;
+                }
+
+
+            }
+            else if (vr == 2)
+            {
+                if (Inteligence2 < 70)
+                {
+                    Inteligence2 += 10;
+                    IntBox.Content = Inteligence2;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence2 > 70)
+                {
+                    IntBox.Content = 70;
+                }
+
+            }
+            else if (vr == 3)
+            {
+                if (Inteligence3 < 250)
+                {
+                    Inteligence3 += 10;
+                    IntBox.Content = Inteligence3;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Inteligence3 > 250)
+                {
+                    IntBox.Content = 250;
+                }
+
+            }
+        }
+
+        private void Vit10Pls_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (vr == 1)
+            {
+                if (Vitality1 < 100)
+                {
+                    Vitality1 += 10;
+                    VitBox.Content = Vitality1;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality1 > 100)
+                {
+                    VitBox.Content = 100;
+                }
+
+
+            }
+            else if (vr == 2)
+            {
+                if (Vitality2 < 80)
+                {
+                    Vitality2 += 10;
+                    VitBox.Content = Vitality2;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality2 > 80)
+                {
+                    VitBox.Content = 80;
+                }
+
+            }
+            else if (vr == 3)
+            {
+                if (Vitality3 < 70)
+                {
+                    Vitality3 += 10;
+                    VitBox.Content = Vitality3;
+                    text -= 10;
+                    LevlBox.Text = Convert.ToString(text);
+                }
+                else if (Vitality3 > 70)
+                {
+                    VitBox.Content = 70;
+                }
+
+            }
+
+        }
+
+      
 
 
     }    

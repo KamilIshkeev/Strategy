@@ -27,17 +27,22 @@
         <TextBox x:Name="LevlBox" HorizontalAlignment="Left" Height="24" Margin="17,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="TextBox_TextChanged_1" Background="#FF6C6C6C" Foreground="White" BorderBrush="{x:Null}" RenderTransformOrigin="1.183,1.171"/>
         <TextBlock Text="Starpoints:" HorizontalAlignment="Left" Height="32" Margin="17,169,0,0" VerticalAlignment="Top" Width="85" Foreground="White"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="92" Margin="1392,916,0,0" VerticalAlignment="Top" Width="468" Click="Back_Click"/>
-        <Button Content="Warrior" HorizontalAlignment="Left" Height="24" Margin="339,141,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Warrior_Create"/>
-        <Button Content="Rogue" HorizontalAlignment="Left" Height="24" Margin="339,170,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Rogue_Create"/>
-        <Button Content="Wizard" HorizontalAlignment="Left" Height="24" Margin="339,199,0,0" VerticalAlignment="Top" Width="134" Background="Gray" Click="Wizard_Create"/>
+        <Button Content="Warrior" HorizontalAlignment="Left" Height="27" Margin="362,141,0,0" VerticalAlignment="Top" Width="139" Background="Gray" Click="Warrior_Create"/>
+        <Button Content="Rogue" HorizontalAlignment="Left" Height="27" Margin="362,173,0,0" VerticalAlignment="Top" Width="139" Background="Gray" Click="Rogue_Create"/>
+        <Button Content="Wizard" HorizontalAlignment="Left" Height="26" Margin="362,206,0,0" VerticalAlignment="Top" Width="139" Background="Gray" Click="Wizard_Create"/>
         <Button x:Name="StrPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,229,0,0" VerticalAlignment="Top" Width="31" Click="StrPls_Click"/>
         <Button x:Name="DexPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,258,0,0" VerticalAlignment="Top" Width="31" Click="DexPls_Click"/>
-        <Image x:Name="Wiz" Margin="565,97,1137,711" Source="/Wiz.png" Stretch="Fill" Visibility="Hidden"/>
-        <Image x:Name="Wir" Margin="565,97,1137,711" Source="/Wir.png" Stretch="Fill" Visibility="Hidden" />
-        <Image x:Name="Rog" Margin="565,97,1137,711" Source="/Rog.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="Wiz" Margin="610,88,1013,632" Source="/Wiz.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="Wir" Margin="610,88,1013,632" Source="/Wir.png" Stretch="Fill" Visibility="Hidden" />
+        <Image x:Name="Rog" Margin="610,88,1013,632" Source="/Rog.png" Stretch="Fill" Visibility="Hidden"/>
         <Button x:Name="IntPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,287,0,0" VerticalAlignment="Top" Width="31" Click="IntPls_Click"/>
         <Button x:Name="VitPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,317,0,0" VerticalAlignment="Top" Width="31" Click="VitPls_Click"/>
         <Button x:Name="HPPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,347,0,0" VerticalAlignment="Top" Width="31" Click="HPPls_Click"/>
         <Button x:Name="MPPls" Content="+" HorizontalAlignment="Left" Height="24" Margin="247,377,0,0" VerticalAlignment="Top" Width="31" Click="MPPls_Click"/>
+        <Button x:Name="Str10Pls" Content="10+" HorizontalAlignment="Left" Height="24" Margin="301,229,0,0" VerticalAlignment="Top" Width="30" Click="Str10Pls_Click"/>
+        <Button x:Name="Dex10Pls" Content="10+" HorizontalAlignment="Left" Height="24" Margin="301,258,0,0" VerticalAlignment="Top" Width="30" Click="Dex10Pls_Click"/>
+        <Button x:Name="Int10Pls" Content="10+" HorizontalAlignment="Left" Height="24" Margin="301,288,0,0" VerticalAlignment="Top" Width="30" Click="Int10Pls_Click"/>
+        <Button x:Name="Vit10Pls" Content="10+" HorizontalAlignment="Left" Height="24" Margin="301,318,0,0" VerticalAlignment="Top" Width="30" Click="Vit10Pls_Click"/>
+        <Grid/>
     </Grid>
 </Page>
