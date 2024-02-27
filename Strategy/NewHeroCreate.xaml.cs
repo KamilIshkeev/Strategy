@@ -214,6 +214,8 @@ namespace Strategy
                 StrBox.Content = Strength2;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+                    Health2 += 0.5;
+                    HealBox.Content = Health2;
                 }
                 else if (Strength2 > 65)
                 {
@@ -230,6 +232,8 @@ namespace Strategy
                 StrBox.Content = Strength3;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+                    Health3 += 0.2;
+                    HealBox.Content = Health3;
                 }
                 else if (Strength3 > 45)
                 {
@@ -512,7 +516,8 @@ namespace Strategy
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
 
-
+                    Health1 += 10;
+                    HealBox.Content = Health1;
                 }
                 else if (Strength1 > 250)
                 {
@@ -530,6 +535,8 @@ namespace Strategy
                     StrBox.Content = Strength2;
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
+                    Health2 += 5;
+                    HealBox.Content = Health2;
                 }
                 else if (Strength2 > 65)
                 {
@@ -546,6 +553,8 @@ namespace Strategy
                     StrBox.Content = Strength3;
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
+                    Health3 += 2;
+                    HealBox.Content = Health3;
                 }
                 else if (Strength3 > 45)
                 {
@@ -620,6 +629,8 @@ namespace Strategy
                     IntBox.Content = Inteligence1;
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
+                    Mana1 += 10;
+                    ManaBox.Content = Mana1;
                 }
                 else if (Inteligence1 > 50)
                 {
@@ -636,6 +647,8 @@ namespace Strategy
                     IntBox.Content = Inteligence2;
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
+                    Mana2 += 12;
+                    ManaBox.Content = Mana2;
                 }
                 else if (Inteligence2 > 70)
                 {
@@ -651,6 +664,8 @@ namespace Strategy
                     IntBox.Content = Inteligence3;
                     text -= 10;
                     LevlBox.Text = Convert.ToString(text);
+                    Mana3 += 15;
+                    ManaBox.Content = Mana3;
                 }
                 else if (Inteligence3 > 250)
                 {
