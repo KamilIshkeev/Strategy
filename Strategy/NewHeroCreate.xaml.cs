@@ -80,13 +80,14 @@ namespace Strategy
             HealBox.Content = Strength1 + Vitality1 * 2;
             ManaBox.Content = Inteligence1;
 
-            
+            Health1 = Strength1 + Vitality1 * 2;
+            Mana1 = Inteligence1;
         }
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
         {
             vr = 2;
-            //Heroes hero = new Heroes(20, 30, 15, 20, 65, 250, 70, 80,0,0);
+            //Heroes hero = new Heroes(20, 30, 15, 20, 65, 250, 70, 80, 0, 0);
             //hero.Strength = 20;
             //hero.Dexterity = 30;
             //hero.Inteligence = 15;
@@ -111,10 +112,10 @@ namespace Strategy
             VitBox.Content = Vitality2;
             HealBox.Content = 0.5 *Strength2 + Vitality2 * 1.5;
             ManaBox.Content = Inteligence2;
-          
 
 
-
+            Health2 = 0.5 * Strength2 + Vitality2 * 1.5;
+            Mana2 = 1.2 * Inteligence2;
         }
 
         private void Wizard_Create(object sender, RoutedEventArgs e)
@@ -138,30 +139,34 @@ namespace Strategy
             VitBox.Content = Vitality3;
             HealBox.Content = 0.5 * Strength3 + Vitality3 * 1.5;
             ManaBox.Content = Inteligence3;
+
+            Health3 = 0.2 * Strength3 + Vitality3 * 1.4;
+            Mana3 = 1.5 * Inteligence3;
         }
 
         double Strength2 = 20;
         int Dexterity2 = 30;
         int Inteligence2 = 15;
         int Vitality2 = 20;
-        int Health2 = 0;
-        int Mana2 = 0;
+        double Health2 = 0;
+        double Mana2 = 0;
 
        
         double Strength1 = 30;
         int Dexterity1 = 15;
         int Inteligence1 = 10;
         int Vitality1 = 25;
-        int Health1 = 0;
-        int Mana1 = 0;
+        double Health1 = 0;
+        double Mana1 = 0;
 
         double Strength3 = 30;
         int Dexterity3 = 15;
         int Inteligence3 = 10;
         int Vitality3 = 25;
-        int Health3 = 0;
-        int Mana3 = 0;
-
+        double Health3 = 0;
+        double Mana3 = 0;
+        
+        
        
 
 
@@ -292,6 +297,8 @@ namespace Strategy
                 IntBox.Content = Inteligence1;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+                    Mana1 += 1;
+                    ManaBox.Content = Mana1;
                 }
                 else if (Inteligence1 > 50)
                 {
@@ -308,6 +315,8 @@ namespace Strategy
                 IntBox.Content = Inteligence2;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+                    Mana2 += 1.2;
+                    ManaBox.Content = Mana2;
                 }
                 else if (Inteligence2 > 70)
                 {
@@ -323,6 +332,8 @@ namespace Strategy
                 IntBox.Content = Inteligence3;
                 text -= 1;
                 LevlBox.Text = Convert.ToString(text);
+                    Mana3 += 1.5;
+                    ManaBox.Content = Mana3;
                 }
                 else if (Inteligence3 > 250)
                 {
