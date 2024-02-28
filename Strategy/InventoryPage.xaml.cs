@@ -23,6 +23,39 @@ namespace Strategy
         public InventoryPage()
         {
             InitializeComponent();
+
+            
+
         }
+
+        public void Geroin()
+        {
+            NewHeroCreate NHC = new NewHeroCreate();
+            
+            if (NHC.vr == 1 ) 
+            {
+                Wir.Visibility = Visibility.Visible;
+                Rog.Visibility = Visibility.Hidden;
+                Wiz.Visibility = Visibility.Hidden;
+            }
+
+            if (NHC.vr == 2)
+            {
+                Wir.Visibility = Visibility.Visible;
+                Rog.Visibility = Visibility.Hidden;
+                Wiz.Visibility = Visibility.Hidden;
+            }
+
+            if (NHC.vr == 3)
+            {
+                Wir.Visibility = Visibility.Visible;
+                Rog.Visibility = Visibility.Hidden;
+                Wiz.Visibility = Visibility.Hidden;
+            }
+        }
+
+    
+    
+    
     }
 }
