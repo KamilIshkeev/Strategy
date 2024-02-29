@@ -11,17 +11,17 @@ namespace Strategy
 
 
 
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public int Inteligence;
-        public int Vitality;
+        public double Strength { get; set; }
+        public double Dexterity { get; set; }
+        public double Inteligence;
+        public double Vitality;
         public int MaxStrength;
         public int MaxDexterity;
         public int MaxInteligence;
         public int MaxVitality;
 
-        public int Health { get; set; }
-        public int Mana { get; set; }
+        public double Health { get; set; }
+        public double Mana { get; set; }
 
         public int PhysDam;
         public int Armor;
@@ -30,20 +30,18 @@ namespace Strategy
         public int CrtChanse;
         public int CrtDam;
 
-        public Heroes(int Strength, int Dexterity, int Inteligence, int Vitality, int MaxStrength, int MaxDexterity, int MaxInteligence, int MaxVitality, int Health, int Mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/)
+        public Heroes(double strength, double dexterity, double inteligence, double vitality, double health, double mana/*, int PhysDam, int Armor, int MagDam, int MagDef, int CrtChanse, int CrtDam*/, double strenght)
         {
 
-            int Str = Strength;
-            int Dex = Dexterity;
-            int Intel = Inteligence;
-            int Vit = Vitality;
-            int MaxStr = MaxStrength;
-            int MaxDex = MaxDexterity;
-            int MaxIntel = MaxInteligence;
-            int MaxVit = MaxVitality;
+             Strength = strenght;
+            
+            Dexterity = dexterity;
+            Inteligence = inteligence;
+            Vitality = vitality;
+            
 
-            int HP = Health;
-            int MP = Mana;
+            Health = health;
+            Mana = mana;
         }
 
         //public void PlsStr()

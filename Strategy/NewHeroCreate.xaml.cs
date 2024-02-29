@@ -64,25 +64,40 @@ namespace Strategy
             
             LevelBox.Content = 1;
             LevelBox.Content = lvl;
-            //Heroes war = new Heroes(30, 15, 10, 25, 250, 80, 50, 10, 0, 0);
 
-            Strength1 = 30;
-            Dexterity1 = 15;
-            Inteligence1 = 10;
-            Vitality1 = 25;
-            Health1 = 0;
-            Mana1 = 0;
 
-            
-            StrBox.Content = Strength1;
-            DexBox.Content = Dexterity1;
-            IntBox.Content = Inteligence1;
-            VitBox.Content = Vitality1;
-            HealBox.Content = Strength1 + Vitality1 * 2;
-            ManaBox.Content = Inteligence1;
 
-            Health1 = Strength1 + Vitality1 * 2;
-            Mana1 = Inteligence1;      
+
+
+            //Strength1 = 30;
+            //Dexterity1 = 15;
+            //Inteligence1 = 10;
+            //Vitality1 = 25;
+            //Health1 = 0;
+            //Mana1 = 0;
+
+
+            //StrBox.Content = Strength1;
+            //DexBox.Content = Dexterity1;
+            //IntBox.Content = Inteligence1;
+            //VitBox.Content = Vitality1;
+            //HealBox.Content = Strength1 + Vitality1 * 2;
+            //ManaBox.Content = Inteligence1;
+
+            //Health1 = Strength1 + Vitality1 * 2;
+            //Mana1 = Inteligence1;
+            //
+            //Heroes war = new Heroes(30, 15, 10, 25, 0, 0, 30);
+
+            //StrBox.Content = war.Strength;
+            //DexBox.Content = war.Dexterity;
+            //IntBox.Content = war.Inteligence;
+            //VitBox.Content = war.Vitality;
+            //HealBox.Content = war.Strength /*+ war.Vitality * 2*/;
+            //ManaBox.Content = 0;
+
+            //Health1 = Strength1 + Vitality1 * 2;
+            //Mana1 = Inteligence1;
         }
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
