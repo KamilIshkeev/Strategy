@@ -82,7 +82,7 @@ namespace Strategy
             ManaBox.Content = Inteligence1;
 
             Health1 = Strength1 + Vitality1 * 2;
-            Mana1 = Inteligence1;
+            Mana1 = Inteligence1;      
         }
 
         private void Rogue_Create(object sender, RoutedEventArgs e)
