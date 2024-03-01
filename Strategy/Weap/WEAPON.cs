@@ -10,7 +10,7 @@ namespace Strategy.Weap
     {
 
         public string Name { get; set; }
-        public string Type { get; set; }
+        public int Type { get; set; }
         public string DamageType { get; set; }
         public int PDamage { get; set; }
         public int ManaAP { get; set; }
@@ -25,7 +25,7 @@ namespace Strategy.Weap
         public int CritDamage { get; set; }
         public int Dexterity { get; set; }
 
-        public WEAPON(string name, string type, string damageType, int pdamage, int manaAP, int strength, int intelligenceUp, int magicCritChance, int magicCritDamage, int critChance, int critDamage, int dexterity)
+        public WEAPON(string name, int type, string damageType, int pdamage, int manaAP, int strength, int intelligenceUp, int magicCritChance, int magicCritDamage, int critChance, int critDamage, int dexterity)
         {
             Name = name;
             Type = type;

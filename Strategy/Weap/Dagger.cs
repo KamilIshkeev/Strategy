@@ -10,7 +10,7 @@ namespace Strategy.Weap
     internal class Dagger : WEAPON
     {
 
-        public Dagger(string name, string type, string damageType, int pdamage, int manaAP, int strength, int magicCrit, int intelligenceUp, int magicCritChance, int magicCritDamage, int agility, int critChance, int critDamage, int dexterity) : base("sharp dagger", "Common", "A", 8, 0, 0, 0, 0, 0, 30, 35, 12)
+        public Dagger(string name, int type, string damageType, int pdamage, int manaAP, int strength, int magicCrit, int intelligenceUp, int magicCritChance, int magicCritDamage, int agility, int critChance, int critDamage, int dexterity) : base("sharp dagger", 1, "A", 8, 0, 0, 0, 0, 0, 30, 35, 12)
         {
             Name = name;
             Type = type;
